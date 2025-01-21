@@ -1,14 +1,14 @@
-//°´Ã¼ÁöÇâ ÇÁ·Î±×·¥ÀÇ ÇÑ°èÁ¡ 2
-//Á¤»ç°¢Çü-Á÷»ç°¢Çü ¹®Á¦
+//ê°ì²´ì§€í–¥ í”„ë¡œê·¸ë¨ì˜ í•œê³„ì  2
+//ì •ì‚¬ê°í˜•-ì§ì‚¬ê°í˜• ë¬¸ì œ
 #define CRT_SECURE_NO_WARNINGS
 #include <iostream>
 using namespace std;
 
-//immutable(ºÒº¯) Å¬·¡½º
-class Rectangle {//Á÷»ç°¢Çü
+//immutable(ë¶ˆë³€) í´ë˜ìŠ¤
+class Rectangle {//ì§ì‚¬ê°í˜•
 public:
 	Rectangle(double a, double b) : a(a),b(b){}
-	virtual ~Rectangle() {} //´ÙÇüÅ¬·¡½º
+	virtual ~Rectangle() {} //ë‹¤í˜•í´ë˜ìŠ¤
 	Rectangle ResizeX(double k) { return Rectangle(a * k, b); }
 	Rectangle ResizeY(double k) { return Rectangle(a, b * k); }
 	double GetA() const { return a; }
@@ -16,7 +16,7 @@ public:
 private:
 	const double a, b;
 };
-class Square : public Rectangle{ //Á¤»ç°¢Çü
+class Square : public Rectangle{ //ì •ì‚¬ê°í˜•
 public:
 	Square(double a) : Rectangle(a,a) {}
 	
