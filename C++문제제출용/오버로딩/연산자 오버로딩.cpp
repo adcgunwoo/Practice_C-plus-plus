@@ -1,31 +1,31 @@
-//º¤ÅÍ+¿¬»êÀÚ ¿À¹ö·Îµù
+//ë²¡í„°+ì—°ì‚°ì ì˜¤ë²„ë¡œë”©
 #include <iostream>
 using namespace std;
 class vector2 {
 public:
-	vector2(); //»ı¼ºÀÚ ¼±¾ğ
-	vector2(float x, float y);//»ı¼ºÀÚ ¼±¾ğ
-	float getx() const; //»ó¼öÇü ¸Ş¼­µå´Â ÀÌ·¸°Ô ÀÛ¼º
+	vector2(); //ìƒì„±ì ì„ ì–¸
+	vector2(float x, float y);//ìƒì„±ì ì„ ì–¸
+	float getx() const; //ìƒìˆ˜í˜• ë©”ì„œë“œëŠ” ì´ë ‡ê²Œ ì‘ì„±
 	float gety() const;
-	vector2 operator+(const vector2 rhs) const; //´õÇÏ±â
-	vector2 operator-(const vector2 rhs) const; //•û±â
-	vector2 operator*(const float rhs) const; //float °öÇÏ±â
-	vector2 operator/(const float rhs) const; //³ª´©±â
-	float operator*(const vector2 rhs) const; //º¤ÅÍ °öÇÏ±â ÀÌ°Å¸¸ ½Ç¼ö
+	vector2 operator+(const vector2 rhs) const; //ë”í•˜ê¸°
+	vector2 operator-(const vector2 rhs) const; //Â•å…®
+	vector2 operator*(const float rhs) const; //float ê³±í•˜ê¸°
+	vector2 operator/(const float rhs) const; //ë‚˜ëˆ„ê¸°
+	float operator*(const vector2 rhs) const; //ë²¡í„° ê³±í•˜ê¸° ì´ê±°ë§Œ ì‹¤ìˆ˜
 	
-	//(º¤ÅÍ / º¤ÅÍ) ´Â ¾ÈµÊ (º¤ÅÍ / ½Ç¼ö)´Â °¡´É
+	//(ë²¡í„° / ë²¡í„°) ëŠ” ì•ˆë¨ (ë²¡í„° / ì‹¤ìˆ˜)ëŠ” ê°€ëŠ¥
 private:
 	float x, y;
 };
 vector2 operator*(const float a, const vector2 b) /*const*/ {
-	return vector2(a * b.getx(),a*b.gety());  //Å¬·¡½º¿¡ ¼ÓÇÑ ¸â¹ö ¸Ş¼­µå°¡ ¾Æ´Ï±â¿¡
-}                                             //const ¸ø ºÙÈù´Ù.
+	return vector2(a * b.getx(),a*b.gety());  //í´ë˜ìŠ¤ì— ì†í•œ ë©¤ë²„ ë©”ì„œë“œê°€ ì•„ë‹ˆê¸°ì—
+}                                             //const ëª» ë¶™íŒë‹¤.
 
 int main()
 {
 	vector2 a(2, 3);
 	vector2 b(-1, 4);
-	//vector2 c = a + b; ÄÄÇ»ÅÍ´Â º¤ÅÍ °è»ê¹ıÀ» ¸ô¶ó¼­ ÀÌ·± ¹æ½ÄÀº ¿À·ù
+	//vector2 c = a + b; ì»´í“¨í„°ëŠ” ë²¡í„° ê³„ì‚°ë²•ì„ ëª°ë¼ì„œ ì´ëŸ° ë°©ì‹ì€ ì˜¤ë¥˜
 	vector2 c1 = a+b; 
 	vector2 c2 = a * 1.6;
 	vector2 c3 = 1.6 * a; 
@@ -41,9 +41,9 @@ int main()
 	return 0;
 }
 vector2::vector2() :x(0), y(0) {}
-//»ı¼ºÀÚ Á¤ÀÇ, ³×ÀÓ½ºÆäÀÌ½º ²À ÀÛ¼º
+//ìƒì„±ì ì •ì˜, ë„¤ì„ìŠ¤í˜ì´ìŠ¤ ê¼­ ì‘ì„±
 vector2::vector2(float x, float y) :x(x), y(y) {}
-//»ı¼ºÀÚ Á¤ÀÇ, ³×ÀÓ½ºÆäÀÌ½º ²À ÀÛ¼º
+//ìƒì„±ì ì •ì˜, ë„¤ì„ìŠ¤í˜ì´ìŠ¤ ê¼­ ì‘ì„±
 vector2 vector2::operator+(const vector2 rhs) const {
 	return vector2(x + rhs.x, y + rhs.y);
 }
