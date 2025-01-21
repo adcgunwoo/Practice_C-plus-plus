@@ -1,11 +1,11 @@
-//static_cast: Á¤Àû(ÄÄÆÄÀÏ)
-//dynamic_cast: µ¿Àû(·±Å¸ÀÓ)
+//static_cast: ì •ì (ì»´íŒŒì¼)
+//dynamic_cast: ë™ì (ëŸ°íƒ€ì„)
 //RTTI(Run Time Type Information/Identification)
-//RTTI´Â ´ÙÇüÅ¬·¡½º¸¸ Áö¿ø
+//RTTIëŠ” ë‹¤í˜•í´ë˜ìŠ¤ë§Œ ì§€ì›
 #include <iostream>
-using namespace std; //C++¿¡´Â µÎ °¡ÁöÀÇ Å¬·¡½º°¡ ÀÖÀ½
+using namespace std; //C++ì—ëŠ” ë‘ ê°€ì§€ì˜ í´ë˜ìŠ¤ê°€ ìˆìŒ
 
-class Base { //°¡»óÇÔ¼ö°¡ ÇÏ³ª¶óµµ ÀÖÀ¸¸é ´ÙÇü Å¬·¡½º
+class Base { //ê°€ìƒí•¨ìˆ˜ê°€ í•˜ë‚˜ë¼ë„ ìˆìœ¼ë©´ ë‹¤í˜• í´ë˜ìŠ¤
 public:
 	virtual void f(){}
 	int x;
@@ -18,7 +18,7 @@ public:
 int main()
 {
 	//Base* b = new Derived;
-	//ºÎ¸ğÅ¬·¡½º¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ,½ÇÁ¦·Î´Â Derived¸¦ °¡¸£Å´
+	//ë¶€ëª¨í´ë˜ìŠ¤ë¥¼ ê°€ë¥´í‚¤ëŠ” í¬ì¸í„°,ì‹¤ì œë¡œëŠ” Derivedë¥¼ ê°€ë¥´í‚´
 	//Derived* d = static_cast<Derived*>(b);
 	cout << sizeof(Base) << endl; 
 	cout << sizeof(Derived) << endl;
