@@ -21,8 +21,8 @@ int main() {
 	b.bFunc();
 	b.bNum = 1;
 
-	d.bFunc(); //ÀÚ½ÄÀÌ ºÎ¸ðÅ¬·¡½ºÀÇ ¸Þ¼­µå È£Ãâ °¡´É
-	d.bNum = 2; //ÀÚ½ÄÀÌ ºÎ¸ðÅ¬·¡½ºÀÇ ¸â¹öº¯¼ö¿¡ Á¢±Ù °¡´É
+	d.bFunc(); //ìžì‹ì´ ë¶€ëª¨í´ëž˜ìŠ¤ì˜ ë©”ì„œë“œ í˜¸ì¶œ ê°€ëŠ¥
+	d.bNum = 2; //ìžì‹ì´ ë¶€ëª¨í´ëž˜ìŠ¤ì˜ ë©¤ë²„ë³€ìˆ˜ì— ì ‘ê·¼ ê°€ëŠ¥
 	d.deFunc();
 	d.dNum = 3;
 
