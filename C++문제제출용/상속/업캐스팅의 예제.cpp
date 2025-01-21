@@ -1,13 +1,13 @@
 #include <iostream>
 using namespace std;
 
-class Animal{//µ¿¹°ÀÇ ÁÂÇ¥¸¦ ±¸ÇÏ´Â Å¬·¡½º
+class Animal{//ë™ë¬¼ì˜ ì¢Œí‘œë¥¼ êµ¬í•˜ëŠ” í´ë˜ìŠ¤
 public:
 	float xpos= 1, ypos = 2;
 };
 
 class FlyingAnimal : public Animal { 
-public: //³¯¾Æ´Ù´Ï±â ¶§¹®¿¡ zÁÂÇ¥µµ ÇÊ¿ä
+public: //ë‚ ì•„ë‹¤ë‹ˆê¸° ë•Œë¬¸ì— zì¢Œí‘œë„ í•„ìš”
 	float zpos = 3;
 }; //
 
@@ -22,10 +22,10 @@ int main()
 	for (int i = 0; i < 10; i++) {
 		a[i] = new FlyingAnimal;
 	}
-	//Æ÷ÀÎÅÍ ¹è¿­À» µ¿Àû ÇÒ´çÇÏ·Á¸é
-	// ´õÇÃÆ÷ÀÎÅÍ¸¦ »ç¿ëÇØ¾ßÇÔ
+	//í¬ì¸í„° ë°°ì—´ì„ ë™ì  í• ë‹¹í•˜ë ¤ë©´
+	// ë”í”Œí¬ì¸í„°ë¥¼ ì‚¬ìš©í•´ì•¼í•¨
 	
-	PrintAnimals(a, 10);//¾÷Ä³½ºÆÃ
+	PrintAnimals(a, 10);//ì—…ìºìŠ¤íŒ…
 
 	for (int i = 0; i < 10; i++) {
 		delete a[i];
