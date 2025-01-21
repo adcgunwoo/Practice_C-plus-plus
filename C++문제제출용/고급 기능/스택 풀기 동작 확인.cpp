@@ -4,37 +4,37 @@ using namespace std;
 
 void func_throw() {
     cout << endl;
-    cout << "func_throw() ÇÔ¼ö ³»ºÎ" << endl;
+    cout << "func_throw() í•¨ìˆ˜ ë‚´ë¶€" << endl;
     cout << "throw -1" << endl;
-    throw - 1;   // Á¤¼ö Çü½Ä ¿¹¿Ü ´øÁö±â
+    throw - 1;   // ì •ìˆ˜ í˜•ì‹ ì˜ˆì™¸ ë˜ì§€ê¸°
     cout << "after throw -1" << endl;
 }
 
 void func_2() {
     cout << endl;
-    cout << "func_2() ÇÔ¼ö ³»ºÎ" << endl;
-    cout << "func_throw() È£Ãâ" << endl;
+    cout << "func_2() í•¨ìˆ˜ ë‚´ë¶€" << endl;
+    cout << "func_throw() í˜¸ì¶œ" << endl;
     func_throw();
     cout << "after func_throw()" << endl;
 }
 
 void func_1() {
     cout << endl;
-    cout << "func_1() ÇÔ¼ö ³»ºÎ" << endl;
-    cout << "func_2() È£Ãâ" << endl;
+    cout << "func_1() í•¨ìˆ˜ ë‚´ë¶€" << endl;
+    cout << "func_2() í˜¸ì¶œ" << endl;
     func_2();
     cout << "after func_2()" << endl;
 }
 
 
 int main() {
-    cout << "main ³»ºÎ" << endl;
+    cout << "main ë‚´ë¶€" << endl;
 
     try {
-        cout << "func_1() È£Ãâ" << endl;
+        cout << "func_1() í˜¸ì¶œ" << endl;
         func_1();
     }
-    catch (int exec) {   // Á¤¼ö Çü½Ä ¿¹¿Ü ¹Þ±â
+    catch (int exec) {   // ì •ìˆ˜ í˜•ì‹ ì˜ˆì™¸ ë°›ê¸°
         cout << endl;
         cout << "catch " << exec << endl;
     }
