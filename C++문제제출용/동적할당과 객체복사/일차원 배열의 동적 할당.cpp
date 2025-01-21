@@ -5,7 +5,7 @@ int main()
 	int *arr;
 	int len;
 
-	cout << "µ¿ÀûÇÒ´ç ¹è¿­ ±æÀÌ : ";
+	cout << "ë™ì í• ë‹¹ ë°°ì—´ ê¸¸ì´ : ";
 	cin >> len;
 	arr = new int[len];
 	for (int i = 0; i < len; i++) {
@@ -17,6 +17,6 @@ int main()
 	cout << endl;
 	for (int i = 0; i < len; i++) {
 		cout << arr[i] << " ";
-	} //À§ ¹İº¹¹® Ãâ·Â°ú µ¿ÀÏÇÑ °á°ú°¡ ³ª¿ÈÀ» ¾Ë ¼ö ÀÖÀ½
+	} //ìœ„ ë°˜ë³µë¬¸ ì¶œë ¥ê³¼ ë™ì¼í•œ ê²°ê³¼ê°€ ë‚˜ì˜´ì„ ì•Œ ìˆ˜ ìˆìŒ
 	delete[]arr;
 }
