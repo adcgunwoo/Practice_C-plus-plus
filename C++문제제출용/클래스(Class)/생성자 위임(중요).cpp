@@ -1,7 +1,7 @@
-//½Ãh ºĞm ÃÊs
+//ì‹œh ë¶„m ì´ˆs
 #include <iostream>
 using namespace std;
-class Time {//´ë¹®ÀÚ·Î ÇØ¾ßÇÔ
+class Time {//ëŒ€ë¬¸ìë¡œ í•´ì•¼í•¨
 public:
 	Time():h(0),m(0),s(0){ }
 	/*Time() {
@@ -16,7 +16,7 @@ public:
 	Time(int h_,int m_,int s_):Time(m_,s_){
 		h = h_;
 	}
-	//»ı¼ºÀÚ À§ÀÓ
+	//ìƒì„±ì ìœ„ì„
 	int h, m, s;
 };
 int main()
