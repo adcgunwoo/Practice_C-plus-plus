@@ -1,4 +1,4 @@
-//°´Ã¼ µ¿Àû ÇÒ´ç
+//ê°ì²´ ë™ì  í• ë‹¹
 #include <iostream>
 using namespace std;
 
@@ -7,8 +7,8 @@ int main()
 	int* a = new int(5);
 	int* b = new int(3);
 
-	//a = b;   ¾èÀº º¹»ç(ÂüÁ¶¸¸ º¹»ç)
-	*a = *b; //±íÀº º¹»ç(°ªÀ» º¹»ç)
+	//a = b;   ì–•ì€ ë³µì‚¬(ì°¸ì¡°ë§Œ ë³µì‚¬)
+	*a = *b; //ê¹Šì€ ë³µì‚¬(ê°’ì„ ë³µì‚¬)
 	cout << *a;
 	delete a;
 	delete b;
