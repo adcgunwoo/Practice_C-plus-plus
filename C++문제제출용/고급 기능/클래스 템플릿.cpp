@@ -1,12 +1,12 @@
-//ÇÔ¼ö ÅÛÇÃ¸´
-//Å¬·¡½º ÅÛÇÃ¸´
+//í•¨ìˆ˜ í…œí”Œë¦¿
+//í´ë˜ìŠ¤ í…œí”Œë¦¿
 #define CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
 using namespace std;
 
 template<typename T>
-class Vector2 { //Vector2´Â Å¬·¡½º°¡ ¾Æ´Ï¶ó, Å¬·¡½º ÅÛÇÃ¸´ÀÌ´Ù
+class Vector2 { //Vector2ëŠ” í´ë˜ìŠ¤ê°€ ì•„ë‹ˆë¼, í´ë˜ìŠ¤ í…œí”Œë¦¿ì´ë‹¤
 public:
 	Vector2() :x(0), y(0) {}
 	Vector2(T x, T y) :x(x), y(y) {}
@@ -33,7 +33,7 @@ private:
 };
 int main()
 {
-	//Å¬·¡½º ÅÛÇÃ¸´Àº <ÀÚ·áÇü>À» Áö¿ï¼ö ¾ø´Ù
+	//í´ë˜ìŠ¤ í…œí”Œë¦¿ì€ <ìë£Œí˜•>ì„ ì§€ìš¸ìˆ˜ ì—†ë‹¤
 	Vector2<float> v1(2, 3);
 	Vector2<double> v2(4, 5);
 	cout << sizeof(v1) << endl;
