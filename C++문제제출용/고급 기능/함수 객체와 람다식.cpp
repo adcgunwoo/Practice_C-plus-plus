@@ -1,7 +1,7 @@
-//ÇÔ¼ö °´Ã¼(function object/funtor)
-//ÇÔ¼öÃ³·³ ÀÛµ¿ÇÏ´Â °´Ã¼
+//í•¨ìˆ˜ ê°ì²´(function object/funtor)
+//í•¨ìˆ˜ì²˜ëŸ¼ ì‘ë™í•˜ëŠ” ê°ì²´
 
-//¶÷´Ù½Ä(ÀÍ¸í ÇÔ¼ö)
+//ëŒë‹¤ì‹(ìµëª… í•¨ìˆ˜)
 #include <iostream>
 //#include <functional>
 using namespace std;
@@ -18,7 +18,7 @@ public:
 
 template<typename T>
 int arrFnMin(const int arr[], int n, /*function<int(int)>*/T f) {
-	int min = f(arr[0]);           //int¸¦ ³Ö¾î¼­ int°¡ ³ª¿À°Ô ÇÔ
+	int min = f(arr[0]);           //intë¥¼ ë„£ì–´ì„œ intê°€ ë‚˜ì˜¤ê²Œ í•¨
 	for (int i = 1; i < n; i++) {  
 		if (f(arr[i]) < min) {
 			min = f(arr[i]);
@@ -32,10 +32,10 @@ int main() {
 
 	cout << arrFnMin<Square>(arr, 7, square) << endl;
 	cout << arrFnMin(arr, 7, [](int n)-> int{return n * n; }) << endl;
-	//À§°¡ ¶÷´Ù½Ä, ÀÌ¸§ÀÌ ¾øÀ½
+	//ìœ„ê°€ ëŒë‹¤ì‹, ì´ë¦„ì´ ì—†ìŒ
 	cout << arrFnMin<MyFunc>(arr, 7, myFunc) << endl;
 	
 	auto a = [](int n)-> int { return n * (n - 15) / 2; };
-	//ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î ÁÂº¯ÀÇ ÀÚ·áÇüÀ» ¼³Á¤ÇÔ
+	//ì»´íŒŒì¼ëŸ¬ê°€ ìë™ìœ¼ë¡œ ì¢Œë³€ì˜ ìë£Œí˜•ì„ ì„¤ì •í•¨
 	//auto b = arr[0];
 }
