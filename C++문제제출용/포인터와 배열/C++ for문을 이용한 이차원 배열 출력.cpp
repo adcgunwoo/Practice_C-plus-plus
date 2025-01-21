@@ -11,20 +11,20 @@ int main()
 			cout << col << " ";
 		}
 		cout << endl;
-	}//¹üÀ§ ±â¹İ for¹®
+	}//ë²”ìœ„ ê¸°ë°˜ forë¬¸
 	cout << endl;
 	for (int (*ln)[3] = arr; ln < arr + 2; ln++) {
 		for (int* c = *ln; c < *ln + 3; c++) {
 			cout << *c << " ";
 		}
 		cout << endl;
-	}//Æ÷ÀÎÅÍ ¿¬»ê
+	}//í¬ì¸í„° ì—°ì‚°
 	cout << endl;
 	for (int(&ln)[3] : arr) {
 		for (int& col : ln) {
 			cout << col << " ";
 		}
 		cout << endl;
-	}//ÂüÁ¶¸¦ »ç¿ëÇÑ ¹è¿­ ¼øÈ¸
+	}//ì°¸ì¡°ë¥¼ ì‚¬ìš©í•œ ë°°ì—´ ìˆœíšŒ
 
 }
