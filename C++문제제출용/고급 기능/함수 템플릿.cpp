@@ -1,5 +1,5 @@
-//ÇÔ¼ö ÅÛÇÃ¸´
-//Å¬·¡½º ÅÛÇÃ¸´
+//í•¨ìˆ˜ í…œí”Œë¦¿
+//í´ë˜ìŠ¤ í…œí”Œë¦¿
 #define CRT_SECURE_NO_WARNINGS
 #include <iostream>
 #include <string>
@@ -25,11 +25,11 @@ private:
 	float x, y;
 };
 
-template <typename T> //ÇÔ¼ö ÅÛÇÃ¸´, ÇÔ¼ö´Â ¾Æ´Ô!
+template <typename T> //í•¨ìˆ˜ í…œí”Œë¦¿, í•¨ìˆ˜ëŠ” ì•„ë‹˜!
 T getArraySum(const T arr[], int n)
 {
-	T sum = T(); //±âº» »ı¼ºÀÚ, ºó ¹®ÀÚ¿­ÀÌ µé¾î°¨
-	//T sum = arr[0]; //º¤ÅÍ °è»êÀ» À§ÇØ ¹Ù²ãÁÜ
+	T sum = T(); //ê¸°ë³¸ ìƒì„±ì, ë¹ˆ ë¬¸ìì—´ì´ ë“¤ì–´ê°
+	//T sum = arr[0]; //ë²¡í„° ê³„ì‚°ì„ ìœ„í•´ ë°”ê¿”ì¤Œ
 	for (int i = 0; i < n; i++) {
 		sum += arr[i];
 	}
@@ -44,7 +44,7 @@ int getArraySum(const int arr[], int n)
 	}
 	return sum;
 }
-float getArraySum(const float arr[], int n) <- ¿À¹ö·Îµù
+float getArraySum(const float arr[], int n) <- ì˜¤ë²„ë¡œë”©
 {
 	float sum = 0;
 	for (int i = 0; i < n; i++) {
