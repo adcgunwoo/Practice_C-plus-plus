@@ -1,7 +1,7 @@
-//static : Á¤Àû <-> µ¿Àû
+//static : ì •ì  <-> ë™ì 
 #include <iostream>
 using namespace std;
-//0~1 float R G B »ö ÀúÀå
+//0~1 float R G B ìƒ‰ ì €ì¥
 
 class color {
 public:
@@ -24,8 +24,8 @@ private:
 	int id;
 };
 int color::idcounter = 1;
-//Å¬·¡½º ¾È¿¡¼­ Á¤ÀûÀ¸·Î ¼±¾ğµÈ °ÍÀº 
-//ÃÊ±â°ªÀ» ³ÖÀ»¼ö ¾ø´Ù. µû¶ó¼­ ºĞ¸®ÇØ¾ßÇÑ´Ù.
+//í´ë˜ìŠ¤ ì•ˆì—ì„œ ì •ì ìœ¼ë¡œ ì„ ì–¸ëœ ê²ƒì€ 
+//ì´ˆê¸°ê°’ì„ ë„£ì„ìˆ˜ ì—†ë‹¤. ë”°ë¼ì„œ ë¶„ë¦¬í•´ì•¼í•œë‹¤.
 int main()
 {
 	color blue(0, 0, 1);
