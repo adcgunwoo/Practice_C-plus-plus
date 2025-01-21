@@ -1,5 +1,5 @@
-//static_cast: Á¤Àû(ÄÄÆÄÀÏ)
-//dynamic_cast: µ¿Àû(·±Å¸ÀÓ)
+//static_cast: ì •ì (ì»´íŒŒì¼)
+//dynamic_cast: ë™ì (ëŸ°íƒ€ì„)
 //RTTI(Run Time Type Information/Identification)
 #include <iostream>
 #include <math.h>
@@ -42,14 +42,14 @@ int main()
 {
 	Shape* shapes[] = { new Circle(1), new  Rectangle(1,2)};
 	for (int i = 0; i < 2; i++) {
-		//µµÇüÀÇ ³ĞÀÌ
-		//Á÷»ç°¢ÇüÀÇ °æ¿ì¸¸, ´ë°¢¼± ±æÀÌ Ãâ·Â
-		cout <<"µµÇüÀÇ ³ĞÀÌ : " << shapes[i]->GetArea() << endl;
+		//ë„í˜•ì˜ ë„“ì´
+		//ì§ì‚¬ê°í˜•ì˜ ê²½ìš°ë§Œ, ëŒ€ê°ì„  ê¸¸ì´ ì¶œë ¥
+		cout <<"ë„í˜•ì˜ ë„“ì´ : " << shapes[i]->GetArea() << endl;
 		Rectangle* r = dynamic_cast<Rectangle*>(shapes[i]);
-		//shapes[i]°¡ RectangleÀ» °¡¸£Å°°í ÀÖÀ¸¸é ÁÖ¼Ú°ªÀÌ µé¾î°¡°í
-		//CircleÀÌ¶ó¸é ³Î°ªÀÌ µé¾î°¨
+		//shapes[i]ê°€ Rectangleì„ ê°€ë¥´í‚¤ê³  ìˆìœ¼ë©´ ì£¼ì†Ÿê°’ì´ ë“¤ì–´ê°€ê³ 
+		//Circleì´ë¼ë©´ ë„ê°’ì´ ë“¤ì–´ê°
 		if (r != NULL) {
-			cout << "´ë°¢¼±ÀÇ ±æÀÌ : " << r->GetDiag() << endl;
+			cout << "ëŒ€ê°ì„ ì˜ ê¸¸ì´ : " << r->GetDiag() << endl;
 		}
 	}
 
