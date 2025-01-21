@@ -1,4 +1,4 @@
-//ÅÛÇÃ¸´ Æ¯¼öÈ­
+//í…œí”Œë¦¿ íŠ¹ìˆ˜í™”
 
 #include <iostream>
 #include <string>
@@ -8,7 +8,7 @@ using namespace std;
 template <typename T>
 T getArraySum(const T arr[], int n)
 {
-	cout << "ÅÛÇÃ¸´" << endl;
+	cout << "í…œí”Œë¦¿" << endl;
 	T sum = arr[0];
 	for (int i = 1; i < n; i++) {
 		sum += arr[i];
@@ -16,12 +16,12 @@ T getArraySum(const T arr[], int n)
 	return sum;
 }
 
-template<>//ÅÛÇÃ¸´ Æ¯¼öÈ­, stringÀÏ¶§
+template<>//í…œí”Œë¦¿ íŠ¹ìˆ˜í™”, stringì¼ë•Œ
 string getArraySum<string>(const string arr[], int n) {
-	cout << "Æ¯¼öÈ­" << endl;
+	cout << "íŠ¹ìˆ˜í™”" << endl;
 	string sum = arr[0];
 	for (int i = 1; i < n; i++) {
-		sum += ' ' + arr[i];//°ø¹é ³Ö±â
+		sum += ' ' + arr[i];//ê³µë°± ë„£ê¸°
 	}
 	return sum;
 }
