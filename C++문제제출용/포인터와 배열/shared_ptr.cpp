@@ -1,13 +1,13 @@
 #include <iostream>
 #include <memory>
-//½º¸¶Æ® Æ÷ÀÎÅÍ
+//ìŠ¤ë§ˆíŠ¸ í¬ì¸í„°
 //unique_ptr, shared_ptr, weak_ptr
 //C++ 11
 using namespace std;
 class Test {
 public:
-	Test(int x) : x(x) { cout << "»ı¼ºÀÚ" << endl; }
-	~Test() { cout << "¼Ò¸êÀÚ" << endl; }
+	Test(int x) : x(x) { cout << "ìƒì„±ì" << endl; }
+	~Test() { cout << "ì†Œë©¸ì" << endl; }
 	int GetX() const { return x; }
 private:
 	int x;
@@ -15,14 +15,14 @@ private:
 int main()
 {
 	
-	//shared_ptr ÇÏ³ª¸¸ µÇ´Â unique_ptr°ú 
-	//´Ù¸£°Ô ¿©·¯ Æ÷ÀÎÅÍ°¡ ÇÏ³ª¸¦ °¡¸£Å³¼öÀÖ°ÔµÊ
+	//shared_ptr í•˜ë‚˜ë§Œ ë˜ëŠ” unique_ptrê³¼ 
+	//ë‹¤ë¥´ê²Œ ì—¬ëŸ¬ í¬ì¸í„°ê°€ í•˜ë‚˜ë¥¼ ê°€ë¥´í‚¬ìˆ˜ìˆê²Œë¨
 	shared_ptr<Test> a(new Test(5));
 	{
 		shared_ptr<Test> b = a;
 		cout << a.use_count() << endl;
 		cout << b.use_count() << endl;
-	}//µÎ°³°¡ °¡¸£Å´
+	}//ë‘ê°œê°€ ê°€ë¥´í‚´
 	cout << a.use_count() << endl;
-	//¿©±â¼­´Â b°¡ ¼Ò¸êµÇ¸é¼­ ÇÏ³ª¸¸ °¡¸£Å´
+	//ì—¬ê¸°ì„œëŠ” bê°€ ì†Œë©¸ë˜ë©´ì„œ í•˜ë‚˜ë§Œ ê°€ë¥´í‚´
 }
