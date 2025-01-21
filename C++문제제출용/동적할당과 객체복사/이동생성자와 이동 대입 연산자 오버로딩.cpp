@@ -14,13 +14,13 @@ public:
 		alloc(len);
 		strcpy(strData, str);
 	}
-	String(const String& rhs) { //º¹»ç »ı¼ºÀÚ
+	String(const String& rhs) { //ë³µì‚¬ ìƒì„±ì
 		cout << "String(const String&) : " << this << endl;
 		len = rhs.len;
 		alloc(len);
 		strcpy(strData, rhs.strData);
 	}
-	String(String&& rhs) { //ÀÌµ¿»ı¼ºÀÚ, &&Àº r-value ÂüÁ¶  
+	String(String&& rhs) { //ì´ë™ìƒì„±ì, &&ì€ r-value ì°¸ì¡°  
 		cout << "String(String&&) : " << this << endl;
 		len = rhs.len;
 		strData = rhs.strData;
@@ -31,7 +31,7 @@ public:
 		release();
 		strData = NULL;
 	}
-	String& operator=(const String& rhs) { //º¹»ç ´ëÀÔ ¿¬»êÀÚ
+	String& operator=(const String& rhs) { //ë³µì‚¬ ëŒ€ì… ì—°ì‚°ì
 		cout << "String &operator=(const String&) : " << this << endl;
 		if (this != &rhs) {
 			release();
@@ -84,6 +84,6 @@ int main() {
 	a = getName();
 	cout << "===== 4 =====" << endl;
 	
-	//r-value µîÈ£ÀÇ ¿ìº¯¿¡¸¸ ¿Ã¼ö ÀÖ´Â °ª, ÀÓ½Ã°´Ã¼´Â r-value!
-	//l-value ÁÂ¿ìº¯ µÑ´Ù °¡´É
+	//r-value ë“±í˜¸ì˜ ìš°ë³€ì—ë§Œ ì˜¬ìˆ˜ ìˆëŠ” ê°’, ì„ì‹œê°ì²´ëŠ” r-value!
+	//l-value ì¢Œìš°ë³€ ë‘˜ë‹¤ ê°€ëŠ¥
 }
