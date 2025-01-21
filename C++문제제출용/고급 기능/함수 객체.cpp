@@ -1,5 +1,5 @@
-//ÇÔ¼ö °´Ã¼(function object/funtor)
-//ÇÔ¼öÃ³·³ ÀÛµ¿ÇÏ´Â °´Ã¼
+//í•¨ìˆ˜ ê°ì²´(function object/funtor)
+//í•¨ìˆ˜ì²˜ëŸ¼ ì‘ë™í•˜ëŠ” ê°ì²´
 
 #include <iostream>
 using namespace std;
