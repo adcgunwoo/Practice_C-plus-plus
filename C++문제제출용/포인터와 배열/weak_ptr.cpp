@@ -1,13 +1,13 @@
 #include <iostream>
 #include <memory>
-//½º¸¶Æ® Æ÷ÀÎÅÍ
+//ìŠ¤ë§ˆíŠ¸ í¬ì¸í„°
 //unique_ptr, shared_ptr, weak_ptr
 //C++ 11
 using namespace std;
 class Test {
 public:
-	Test(int x) : x(x) { cout << "»ı¼ºÀÚ" << endl; }
-	~Test() { cout << "¼Ò¸êÀÚ" << endl; }
+	Test(int x) : x(x) { cout << "ìƒì„±ì" << endl; }
+	~Test() { cout << "ì†Œë©¸ì" << endl; }
 	int GetX() const { return x; }
 private:
 	int x;
@@ -16,8 +16,8 @@ int main()
 {
 	weak_ptr<Test> b;
 	{
-		//a°¡ °¡¸£Å°°í ÀÖ´Â °÷À» b°¡ °¡¸£ÄÑµµ
-		//¸Ş¸ğ¸® ¼ÒÀ¯±ÇÀÌ ¾ø¾î¼­ use_count´Â 1ÀÌ´Ù.
+		//aê°€ ê°€ë¥´í‚¤ê³  ìˆëŠ” ê³³ì„ bê°€ ê°€ë¥´ì¼œë„
+		//ë©”ëª¨ë¦¬ ì†Œìœ ê¶Œì´ ì—†ì–´ì„œ use_countëŠ” 1ì´ë‹¤.
 		shared_ptr<Test> a(new Test(6));
 		b = a;
 		cout << a.use_count() << endl; //1
@@ -26,8 +26,8 @@ int main()
 	cout << b.use_count() << endl; //0
 	
 	//cout << b->GetX() << endl;
-	//a°¡ ¼Ò¸êµÇ¾ú±â ¶§¹®¿¡ ºÒ°¡(´ó±Û¸µ Æ÷ÀÎÅÍ)
+	//aê°€ ì†Œë©¸ë˜ì—ˆê¸° ë•Œë¬¸ì— ë¶ˆê°€(ëŒ•ê¸€ë§ í¬ì¸í„°)
 	if (!b.expired()) {
 		cout << b.lock()->GetX() << endl;
-	}//b°¡ »ì¾ÆÀÖ´Ù¸é Á¤»óÃâ·Â, ¼Ò¸êµÆ´Ù¸é ³ÎÀ» ¸®ÅÏ
+	}//bê°€ ì‚´ì•„ìˆë‹¤ë©´ ì •ìƒì¶œë ¥, ì†Œë©¸ëë‹¤ë©´ ë„ì„ ë¦¬í„´
 }
