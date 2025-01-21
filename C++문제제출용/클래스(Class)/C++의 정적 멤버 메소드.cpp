@@ -1,7 +1,7 @@
-//static : Á¤Àû <-> µ¿Àû
+//static : ì •ì  <-> ë™ì 
 #include <iostream>
 using namespace std;
-//0~1 float R G B »ö ÀúÀå
+//0~1 float R G B ìƒ‰ ì €ì¥
 class color {
 public:
 	color() :r(0), g(0), b(0) {}
@@ -16,7 +16,7 @@ public:
 	static color mixcolors(color a, color b) {
 		return color((a.r + b.r) / 2, (a.g + b.g) / 2, (a.b + b.b) / 2);
 	}
-	//staticÀ» ¾²¸é privateµµ Á¢±Ù °¡´ÉÇØÁü
+	//staticì„ ì“°ë©´ privateë„ ì ‘ê·¼ ê°€ëŠ¥í•´ì§
 
 private:
 	float r, g, b;
