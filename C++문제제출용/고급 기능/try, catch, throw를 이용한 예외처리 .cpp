@@ -4,7 +4,7 @@ int main()
     try 
     {
         int input;
-        std::cout << "Á¤¼ö Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ¼¼¿ä. : ";
+        std::cout << "ì •ìˆ˜ ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”. : ";
         std::cin >> input;
         if (input > 0) {
             std::cout << "throw 1" << std::endl;
