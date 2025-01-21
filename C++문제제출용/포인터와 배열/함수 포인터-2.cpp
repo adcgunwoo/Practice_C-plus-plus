@@ -1,5 +1,5 @@
-//ÇÔ¼ö Æ÷ÀÎÅÍ
-//ÇÔ¼ö¸¦ °¡¸£Å°´Â Æ÷ÀÎÅÍ
+//í•¨ìˆ˜ í¬ì¸í„°
+//í•¨ìˆ˜ë¥¼ ê°€ë¥´í‚¤ëŠ” í¬ì¸í„°
 #include <iostream>
 int square(int x) { return x * x; }
 int myFunc(int x) { return x * (x - 15) / 2; }
@@ -7,8 +7,8 @@ int cube(int x) { return x * x * x; }
 
 using namespace std;
 int arrFnMin(const int arr[], int n, int (*f)(int)) {
-	int min = f(arr[0]);           //intÇü ¸Å°³º¯¼ö¸¦ ¹Ş¾Æ intÇü °ªÀ» 
-	for (int i = 1; i < n; i++) {  //¹İÈ¯ÇÏ´Â ÇÔ¼ö¸¦ °¡¸£Å°´Â ÇÔ¼ö Æ÷ÀÎÅÍ
+	int min = f(arr[0]);           //intí˜• ë§¤ê°œë³€ìˆ˜ë¥¼ ë°›ì•„ intí˜• ê°’ì„ 
+	for (int i = 1; i < n; i++) {  //ë°˜í™˜í•˜ëŠ” í•¨ìˆ˜ë¥¼ ê°€ë¥´í‚¤ëŠ” í•¨ìˆ˜ í¬ì¸í„°
 		if (f(arr[i]) < min) {
 			min = f(arr[i]);
 		}
