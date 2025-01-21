@@ -1,6 +1,6 @@
 #include <iostream>
-//C++ÀÇ ÇÔ¼ö
-//over load(¿À¹ö·Îµå) ´ÙÁßÁ¤ÀÇ?
+//C++ì˜ í•¨ìˆ˜
+//over load(ì˜¤ë²„ë¡œë“œ) ë‹¤ì¤‘ì •ì˜?
 //using namespace std;
 void swap(int& a, int& b)
 {
@@ -25,12 +25,12 @@ int main()
 	int a(20), b(10);
 	swap(a, b);
 	double da(2.2), db(3.3);
-	//swap(da, db); Å¸ÀÔÀÌ ¾È ¸Â¾Æ¼­ ¿¡·¯°¡ ³²
+	//swap(da, db); íƒ€ì…ì´ ì•ˆ ë§ì•„ì„œ ì—ëŸ¬ê°€ ë‚¨
 	swap(da, db);
 	int *pa(&a), *pb(&b);
 	swap(pa, pb); 
-	//°°Àº swapÀÎµ¥ Å¸ÀÔÀ» ±¸ºĞÇØÁÜ
-	//ÄÄÆÄÀÏ·¯°¡ ÀÚµ¿À¸·Î °°Àº ÀÚ·áÇüÀ» Ã£¾Æ
+	//ê°™ì€ swapì¸ë° íƒ€ì…ì„ êµ¬ë¶„í•´ì¤Œ
+	//ì»´íŒŒì¼ëŸ¬ê°€ ìë™ìœ¼ë¡œ ê°™ì€ ìë£Œí˜•ì„ ì°¾ì•„
 	std::cout << "a = " << a << std::endl;
 	std::cout << "b = " << b << std::endl;
 	std::cout << "da = " << da << std::endl;
