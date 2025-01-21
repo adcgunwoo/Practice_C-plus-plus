@@ -1,18 +1,18 @@
-//ºñ(Şª)Å¸ÀÔ ÆÄ¶ó¹ÌÅÍ
+//ë¹„(é)íƒ€ì… íŒŒë¼ë¯¸í„°
 #define CRT_SECRE_NO_WARNINGS
 #include <iostream>
 #include <string>
 using namespace std;
-template<typename T, int n> //nÀº Â÷¿ø
-class Vector { //´ÙÂ÷¿ø º¤ÅÍ
+template<typename T, int n> //nì€ ì°¨ì›
+class Vector { //ë‹¤ì°¨ì› ë²¡í„°
 public:
 	/*Vector() {
-		comp = new T[n]; //¹è¿­ ÇÒ´ç
+		comp = new T[n]; //ë°°ì—´ í• ë‹¹
 	}
 	~Vector(){
 		delete[] comp;
 	}*/
-	T GetComp(int i) {//i¹øÂ° ¼ººĞÀ» ¸®ÅÏ
+	T GetComp(int i) {//ië²ˆì§¸ ì„±ë¶„ì„ ë¦¬í„´
 		return comp[i];
 	}
 	void SetComp(int i, T val) {
@@ -28,7 +28,7 @@ public:
 	}
 private:
 	//T* comp;
-	T comp[n];//º¤ÅÍÀÇ ¼ººĞ, ¹è¿­ÀÌ ¸â¹öº¯¼ö¸é Ç×»ó ±íÀº º¹»ç
+	T comp[n];//ë²¡í„°ì˜ ì„±ë¶„, ë°°ì—´ì´ ë©¤ë²„ë³€ìˆ˜ë©´ í•­ìƒ ê¹Šì€ ë³µì‚¬
 };
 int main()
 {
