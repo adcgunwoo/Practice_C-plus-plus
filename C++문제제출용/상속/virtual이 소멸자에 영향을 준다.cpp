@@ -16,7 +16,7 @@ class Bingsoo {
 public:
 	Bingsoo() { 
 		cout << "Bigsoo()" << endl;
-		ice = new Ice; //¿©±â¼­ È£ÃâµÊ
+		ice = new Ice; //ì—¬ê¸°ì„œ í˜¸ì¶œë¨
 	}
 	virtual ~Bingsoo() { 
 		cout << "~Bingsoo()" << endl; 
@@ -24,7 +24,7 @@ public:
 	}
 private:
 	Ice *ice;
-	//»ý¼ºÀÚ È£ÃâÀº ¾ÈµÊ
+	//ìƒì„±ìž í˜¸ì¶œì€ ì•ˆë¨
 };
 
 class PatBingsoo : public Bingsoo {
@@ -44,14 +44,14 @@ private:
 int main()
 {
 	Bingsoo* p = new PatBingsoo;
-	//ºÎ¸ðÅ¬·¡½ºÀÇ Æ÷ÀÎÅÍ°¡ 
-	//ÀÚ½ÄÅ¬·¡½ºÀÇ °´Ã¼¸¦ °¡¸£Å°´Â »óÈ²
+	//ë¶€ëª¨í´ëž˜ìŠ¤ì˜ í¬ì¸í„°ê°€ 
+	//ìžì‹í´ëž˜ìŠ¤ì˜ ê°ì²´ë¥¼ ê°€ë¥´í‚¤ëŠ” ìƒí™©
 
-	//Bingsoo ¼Ò¸êÀÚ¿¡ virtualÀ» Ãß°¡Çß´õ´Ï
-	//Patbingsoo ¼Ò¸êÀÚ¸¦ È£ÃâÇß´Ù.
-	//C++Àº ±âº»ÀûÀ¸·Î Á¤Àû¹ÙÀÎµùÀÌ¶ó virtualÀÌ ¾øÀ¸¸é
-	//p´Â Bingsoo¸¦ °¡¸£Å°°í ÀÖ¾î
-	//¿ø·¡¶ó¸é PatBingsoo ¼Ò¸êÀÚ¸¦ È£ÃâÇÏÁö ¸øÇÔ
+	//Bingsoo ì†Œë©¸ìžì— virtualì„ ì¶”ê°€í–ˆë”ë‹ˆ
+	//Patbingsoo ì†Œë©¸ìžë¥¼ í˜¸ì¶œí–ˆë‹¤.
+	//C++ì€ ê¸°ë³¸ì ìœ¼ë¡œ ì •ì ë°”ì¸ë”©ì´ë¼ virtualì´ ì—†ìœ¼ë©´
+	//pëŠ” Bingsooë¥¼ ê°€ë¥´í‚¤ê³  ìžˆì–´
+	//ì›ëž˜ë¼ë©´ PatBingsoo ì†Œë©¸ìžë¥¼ í˜¸ì¶œí•˜ì§€ ëª»í•¨
 	
 
 	delete p;
