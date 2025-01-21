@@ -1,10 +1,10 @@
-//¿¹¿Ü Ã³¸®
+//ì˜ˆì™¸ ì²˜ë¦¬
 #include <iostream>
 #include <string>
 using namespace std;
 int fact(int n) {
-	if (n < 0) throw to_string(n) + " : À½¼öÀÔ´Ï´Ù.";
-	//¿¹¿Ü¸¦ ´øÁü, Å¸ÀÔÀº »ó°üÀÌ ¾øÀ½
+	if (n < 0) throw to_string(n) + " : ìŒìˆ˜ìž…ë‹ˆë‹¤.";
+	//ì˜ˆì™¸ë¥¼ ë˜ì§, íƒ€ìž…ì€ ìƒê´€ì´ ì—†ìŒ
 	if (n == 1) return 1;
 	return n * fact(n - 1);
 }
@@ -26,9 +26,9 @@ int main()
 			cout << comb(n, r) << endl;
 		}
 	}
-	catch (const string& e) {//¿¹¿Ü¸¦ ¹ÞÀ½, throw¿Í Å¸ÀÔÀÌ °°¾Æ¾ßÇÔ
+	catch (const string& e) {//ì˜ˆì™¸ë¥¼ ë°›ìŒ, throwì™€ íƒ€ìž…ì´ ê°™ì•„ì•¼í•¨
 		cout << e << endl;
-	} //ÀÌµ¿ »ý¼ºÀº ¾ÈµÊ
+	} //ì´ë™ ìƒì„±ì€ ì•ˆë¨
 	catch (int e) {
 		cout << e << endl;
 	}
@@ -38,11 +38,11 @@ int main()
 			cin >> n >> r;
 			cout << comb(n, r) << endl;
 		}
-		catch (const string& e) {//¿¹¿Ü¸¦ ¹ÞÀ½, throw¿Í Å¸ÀÔÀÌ °°¾Æ¾ßÇÔ
+		catch (const string& e) {//ì˜ˆì™¸ë¥¼ ë°›ìŒ, throwì™€ íƒ€ìž…ì´ ê°™ì•„ì•¼í•¨
 			cout << e << endl;
 		}
 	}*/
-	catch (...) { //À§ÀÇ ¿¹¿Ü¸¦ ¸ðµÎ ¹ÞÁö ¸øÇÏ¸é, elseÀÌ ¿ªÇÒ
-		cout << "¾Ë ¼ö ¾ø´Â ¿¹¿Ü ¹ß»ý" << endl;
+	catch (...) { //ìœ„ì˜ ì˜ˆì™¸ë¥¼ ëª¨ë‘ ë°›ì§€ ëª»í•˜ë©´, elseì´ ì—­í• 
+		cout << "ì•Œ ìˆ˜ ì—†ëŠ” ì˜ˆì™¸ ë°œìƒ" << endl;
 	}
 }
