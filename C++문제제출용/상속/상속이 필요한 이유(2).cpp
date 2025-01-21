@@ -4,7 +4,7 @@ using namespace std;
 class Image {
 public:
 	operator string() {
-		return "»çÁø";
+		return "ì‚¬ì§„";
 	}
 };
 class Message {
@@ -40,24 +40,24 @@ private:
 	Image* p_image;
 };
 void printMessage(Message* m) {
-	cout << "º¸³½ ½Ã°£ : " << m->GetSendTime() << endl;
-	cout << "º¸³½ »ç¶÷ : " << m->GetSendName() << endl;
-	cout << "  ³» ¿ë   : " << m->GetContent() << endl;
+	cout << "ë³´ë‚¸ ì‹œê°„ : " << m->GetSendTime() << endl;
+	cout << "ë³´ë‚¸ ì‚¬ëŒ : " << m->GetSendName() << endl;
+	cout << "  ë‚´ ìš©   : " << m->GetContent() << endl;
 	cout << endl;
 }
 /*void printMessage(const Message& m) {
-	cout << "º¸³½ ½Ã°£ : " << m.GetSendTime() << endl;
-	cout << "º¸³½ »ç¶÷ : " << m.GetSendName() << endl;
-	cout << "  ³» ¿ë   : " << m.GetContent() << endl;
+	cout << "ë³´ë‚¸ ì‹œê°„ : " << m.GetSendTime() << endl;
+	cout << "ë³´ë‚¸ ì‚¬ëŒ : " << m.GetSendName() << endl;
+	cout << "  ë‚´ ìš©   : " << m.GetContent() << endl;
 	cout << endl;
 }*/
 int main() {
 	Image* p_dogImage = new Image();
 
 	Message* messages[]{
-		new TextMessage(10, "µÎµé", "¾È³ç"),
-		new ImageMessage(20, "µÎµé", p_dogImage)
-	}; //Å¬·¡½º ¹è¿­
+		new TextMessage(10, "ë‘ë“¤", "ì•ˆë…•"),
+		new ImageMessage(20, "ë‘ë“¤", p_dogImage)
+	}; //í´ë˜ìŠ¤ ë°°ì—´
 
 	for (Message* m : messages) {
 		printMessage(m);
@@ -67,15 +67,15 @@ int main() {
 		printMessage(messages[i]);
 	}*/
 
-	TextMessage* hello = new TextMessage(10, "µÎµé", "¾È³ç");
-	ImageMessage* dog = new ImageMessage(20, "µÎµé", p_dogImage);
+	TextMessage* hello = new TextMessage(10, "ë‘ë“¤", "ì•ˆë…•");
+	ImageMessage* dog = new ImageMessage(20, "ë‘ë“¤", p_dogImage);
 
 	printMessage(hello);
 	printMessage(dog);
 	
 	/*printMessage(*hello);
 	printMessage(*dog);*/
-	//·¹ÆÛ·±½º·Îµµ °¡´É
+	//ë ˆí¼ëŸ°ìŠ¤ë¡œë„ ê°€ëŠ¥
 
 	delete p_dogImage;
 	delete hello;
