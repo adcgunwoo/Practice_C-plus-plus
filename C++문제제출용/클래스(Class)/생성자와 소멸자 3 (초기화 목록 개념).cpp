@@ -1,15 +1,15 @@
 #include <iostream>
 using namespace std;
-//»ı¼ºÀÚ : ¸â¹ö º¯¼ö ÃÊ±âÈ­
-//¼Ò¸êÀÚ : ¸Ş¸ğ¸® ÇØÁ¦, ÈÄ¿¡ ´õ ³ª¿È
+//ìƒì„±ì : ë©¤ë²„ ë³€ìˆ˜ ì´ˆê¸°í™”
+//ì†Œë©¸ì : ë©”ëª¨ë¦¬ í•´ì œ, í›„ì— ë” ë‚˜ì˜´
 
-//º¹¼Ò¼ö ÀúÀå Å¬·¡½º ÀÛ¼º
+//ë³µì†Œìˆ˜ ì €ì¥ í´ë˜ìŠ¤ ì‘ì„±
 class complex {
 public:
 	complex():real(0), imag(0) { }
 	complex(double real_, double imag_):real(real_), imag(imag_) { }
   //complex(double real, double imag) : real(real),imag(imag) { }
-	//ÀÌ·¯ÇÑ ¹æ½ÄÀ¸·Î ÃÊ±âÈ­ ÇÏ´Â°ÍÀ» ÃÊ±âÈ­ ¸ñ·ÏÀÌ¶ó°í ÇÑ´Ù,		
+	//ì´ëŸ¬í•œ ë°©ì‹ìœ¼ë¡œ ì´ˆê¸°í™” í•˜ëŠ”ê²ƒì„ ì´ˆê¸°í™” ëª©ë¡ì´ë¼ê³  í•œë‹¤,		
 	double getreal() {
 		return real;
 	}
@@ -24,7 +24,7 @@ public:
 	}
 private:
 	double real, imag;
-	//¸É¹öº¯¼ö´Â °´Ã¼ ³»¿¡¼­ »ó°ü¾øÀÌ »ç¿ë °¡´É
+	//ë§´ë²„ë³€ìˆ˜ëŠ” ê°ì²´ ë‚´ì—ì„œ ìƒê´€ì—†ì´ ì‚¬ìš© ê°€ëŠ¥
 };
 int main()
 {
@@ -34,7 +34,7 @@ int main()
 	complex c3(2, 3); 
 	complex c4 = { 2,3 };
 	complex c5 = complex{ 2,3 };
-	complex c6{ 2,3 }; //2¹øºÎÅÍ 6¹øÀº ¸ğµÎ µ¿ÀÏÇÑ ÀÇ¹Ì
+	complex c6{ 2,3 }; //2ë²ˆë¶€í„° 6ë²ˆì€ ëª¨ë‘ ë™ì¼í•œ ì˜ë¯¸
 	cout << "c1 = " << c1.getreal() << ", " << c1.getimg() << endl;
 	cout << "c2 = " << c2.getreal() << ", " << c2.getimg() << endl;
 	cout << "c3 = " << c3.getreal() << ", " << c3.getimg() << endl;
